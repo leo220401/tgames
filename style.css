@@ -1,0 +1,51 @@
+#imagemSlide{
+	height: 100vh;
+	max-height: 700px !important;
+	object-fit: cover;
+}
+.tamanhoScroll{
+	position: relative;
+	overflow: auto;
+	height: 200px;
+}
+.bg-danger{
+	background-color: #e8e8e8 !important;
+}
+.corTitulo{
+	color: #3e4095;
+}
+.divdois{
+	position: absolute;
+	left: 40%;
+	top: 0%;
+	width: 60%;
+	height: 100vh;
+	overflow: hidden;
+	z-index: -1;
+}
+.divdois1{
+	position: absolute;
+	left: 40%;
+	top: 0%;
+	width: 60%;
+	height: 145vh;
+	overflow: hidden;
+	z-index: -1;
+}
+.embranco{
+	width: 100%;
+	height: 200%;
+	background-color: red;
+	position: relative;
+	top:-100%;
+	left: 40%;
+	z-index: -1;
+	transform: rotate(-10deg);
+	transform-origin: right bottom;
+}
+.form-control{
+	border-color: #007bff;
+}
+.card{
+	border-color: #007bff;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cadastre-se</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="bootstrap/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<!--Menu do site-->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+		<div class="container">
+		
+			<a class="navbar-brand" href="index.html">Dynamis</a>
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDynamis">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarDynamis">
+			
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Início</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Quem Somos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Serviços</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contato</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="login.html">Faça um orçamento</a>
+					</li>
+				</ul>
+				
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="btn btn-outline-primary mr-2 mb-2" href="login.html">Login</a>
+					</li>
+					<li class="nav-item">
+						<a class="btn btn-outline-primary" href="cadastro.html">Cadastrar</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+<!--Imagem ao fundo-->
+<div class="divdois1 lg">
+<div class="embranco"></div>
+</div>	
+
+<!--formulario do site-->
+	<div class="container">
+		<div class="row">
+			<div class="col-12 my-5">
+				<h1 class="display-4"><b>Faça seu Cadastro</b></h1>
+			</div>
+		</div>
+
+		<div class="row mb-5">
+			<div class="col-sm-12 col-md-10 col-lg-8">
+				<form method="POST">
+					<div class="form-row">
+						<div class="form-group col-sm-12">
+							<label for="inputNome">Nome completo:</label>
+							<input type="text" name="nome" class="form-control" id="inputNome" required>
+						</div>
+
+						<div class="form-group col-sm-6">
+							<label for="segmento">Segmento:</label>
+							<select required name="segmento" id="segmento" class="form-control" ><br />
+								<option value="">Escolha um segmento</option><br />
+								<option value="residencias">Residencias</option><br />
+								<option value="industrias">Industrias</option><br />
+								<option value="empresas">Empresas</option><br />
+							</select>
+						</div>
+
+						<div class="form-group col-sm-6">
+							<label for="inputCPF">CPF/CNPJ:</label>
+							<input type="text" name="cpf" class="form-control" id="inputCPF">
+						</div>
+
+						<div class="form-group col-sm-6">
+							<label for="inputEmail">E-mail:</label>
+							<input type="email" name="email" class="form-control" id="inputEmail" required>
+						</div>
+
+						<div class="form-group col-sm-6">
+							<label for="inputTelefone">Telefone:</label>
+							<input type="text" name="telefone" class="form-control" id="inputTelefone" required>
+						</div>
+
+						<div class="form-group col-sm-6">
+							<label for="inputTalternativo">Telefone Alternativo:</label>
+							<input type="text" name="telefone_alternativo" class="form-control" id="inputTalternativo">
+						</div>
+
+						<div class="form-group col-sm-6">
+							<label for="inputCEP">C.E.P.:</label>
+							<input type="text" name="cep" class="form-control" id="inputCEP" required>
+						</div>
+
+						<div class="form-group col-sm-8">
+							<label for="inputEndereco">Endereço:</label>
+							<input type="text" name="endereco" class="form-control" id="inputEndereco" required>
+						</div>
+
+						<div class="form-group col-sm-4">
+							<label for="inputNumero">Número:</label>
+							<input type="text" name="numero" class="form-control" id="inputNumero" required>
+						</div>
+
+						<div class="form-group col-sm-12">
+							<label for="descProblema">Descrição do Problema:</label>
+							<textarea name="descProblema" class="form-control" id="descProblema" required></textarea>
+						</div>
+
+						<div class="form-group col-sm-12 my-4">
+							<h2>Dados do Serviço:</h2>
+						</div>
+
+						<div class="form-group col-sm-4">
+							<input type="checkbox" name="dadosServ" id="dedetizacao" value="dedetizacao" class=""">
+							<label for="dedetizacao">Dedetização</label>
+						</div>
+
+
+						<div class="form-group col-sm-4">
+							<input type="checkbox" name="dadosServ" id="desratizacao" value="desratizacao" class=""">
+							<label for="desratizacao">Desratização</label>
+						</div>
+
+
+						<div class="form-group col-sm-4">
+							<input type="checkbox" name="dadosServ" id="descupinizacao" value="descupinizacao" class=""">
+							<label for="descupinizacao">Descupinização</label>
+						</div>
+
+
+						<div class="form-group col-sm-4">
+							<input type="checkbox" name="dadosServ" id="desentupimento" value="desentupimento" class=""">
+							<label for="desentupimento">Desentupimento</label>
+						</div>
+
+
+						<div class="form-group col-sm-4">
+							<input type="checkbox" name="dadosServ" id="desinfeccao" value="desinfeccao" class=""">
+							<label for="desinfeccao">Desinfecção de caixas-d’água</label>
+						</div>
+
+						<div class="form-group col-sm-4">
+							<input type="checkbox" name="dadosServ" id="impermeabilização" value="impermeabilização" class=""">
+							<label for="impermeabilização">Impermeabilização de caixas</label>
+						</div>
+
+						<div class="form-group col-sm-6">
+							<input type="checkbox" name="dadosServ" id="succao" value="succao" class=""">
+							<label for="succao">Sucção de caixa de gordura, fossa e dreno</label>
+						</div>
+
+						<div class="form-row col-lg-12 my-3">
+							<div class="form-group col-sm-6">
+								<button type="submit" name="enviar" class="form-control btn btn-outline-primary" id="inputSobrenome">Enviar</button>
+							</div>
+
+							<div class="form-group col-sm-6">
+								<button type="reset" name="reset" class="form-control btn btn-outline-primary" id="inputSobrenome">Limpar</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="bootstrap/bootstrap.js"></script>
+</body>
+</html>
